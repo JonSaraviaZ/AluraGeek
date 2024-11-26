@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Press+Start+2P&display=swap');
+    </style>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Alura Geek</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img class="corazones" src="imagenes/corazones.svg" alt="fila de corazones">
+            <h1>AluraGeek</h1>
+        </div>
+    </header>
+    <!-- Main -->
+    <main>
+        <!-- Sección de productos -->
+        <section class="seccion_productos">
+            <h2>Mis Productos</h2>
+            <div data-product class="contenedor_productos" >
+                <!-- <div class="caja_imagen">
+                    <img class="imagen"src="./imagenes/Star wars.svg" alt="Imagen del producto">
+                </div>
+                <h3 class="nom_producto">Nombre del producto</h3>
+                <div class="product" data-id="${id}">
+                    <p class="caja_valor">$</p>
+                    <button data="caja_boton"">
+                        <svg data-icono="icono_trash" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 6.00022H16V4.33022C15.9765 3.69004 15.7002 3.08528 15.2316 2.64851C14.7629 2.21174 14.1402 1.97861 13.5 2.00022H10.5C9.85976 1.97861 9.23706 2.21174 8.76843 2.64851C8.2998 3.08528 8.02346 3.69004 8 4.33022V6.00022H3C2.73478 6.00022 2.48043 6.10558 2.29289 6.29311C2.10536 6.48065 2 6.735 2 7.00022C2 7.26544 2.10536 7.51979 2.29289 7.70733C2.48043 7.89486 2.73478 8.00022 3 8.00022H4V19.0002C4 19.7959 4.31607 20.5589 4.87868 21.1215C5.44129 21.6842 6.20435 22.0002 7 22.0002H17C17.7957 22.0002 18.5587 21.6842 19.1213 21.1215C19.6839 20.5589 20 19.7959 20 19.0002V8.00022H21C21.2652 8.00022 21.5196 7.89486 21.7071 7.70733C21.8946 7.51979 22 7.26544 22 7.00022C22 6.735 21.8946 6.48065 21.7071 6.29311C21.5196 6.10558 21.2652 6.00022 21 6.00022ZM10 16.0002C10 16.2654 9.89464 16.5198 9.70711 16.7073C9.51957 16.8949 9.26522 17.0002 9 17.0002C8.73479 17.0002 8.48043 16.8949 8.29289 16.7073C8.10536 16.5198 8 16.2654 8 16.0002V12.0002C8 11.735 8.10536 11.4806 8.29289 11.2931C8.48043 11.1056 8.73479 11.0002 9 11.0002C9.26522 11.0002 9.51957 11.1056 9.70711 11.2931C9.89464 11.4806 10 11.735 10 12.0002V16.0002ZM10 4.33022C10 4.17022 10.21 4.00022 10.5 4.00022H13.5C13.79 4.00022 14 4.17022 14 4.33022V6.00022H10V4.33022ZM16 16.0002C16 16.2654 15.8946 16.5198 15.7071 16.7073C15.5196 16.8949 15.2652 17.0002 15 17.0002C14.7348 17.0002 14.4804 16.8949 14.2929 16.7073C14.1054 16.5198 14 16.2654 14 16.0002V12.0002C14 11.735 14.1054 11.4806 14.2929 11.2931C14.4804 11.1056 14.7348 11.0002 15 11.0002C15.2652 11.0002 15.5196 11.1056 15.7071 11.2931C15.8946 11.4806 16 11.735 16 12.0002V16.0002Z" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+                <i class="fas fa-trash"></i> -->
+            </div>
+        </section>
+        <!-- Sección del formulario -->
+        <section class="section_formulario">
+            <form class="formulario" data-form>
+                <h2>Agregar Producto:</h2>
+                <div class="formulario_caja">
+                    <input data-name class="caja_escrito" type="text" id="nombre" name="nombre" required placeholder="Nombre...">
+                </div>
+                <div class="formulario_caja">
+                    <input data-price class="caja_escrito" type="number" id="precio" name="precio" required placeholder="Precio...">
+                </div>
+                <div class="formulario_caja">
+                    <input data-image name="imagem" class="caja_escrito" required placeholder="Inserta la URL de la imagen..."
+                        id='imagen'/>
+                </div>
+                <div class="formulario_botones">
+                    <button class="boton_enviar" type="submit">Enviar</button>
+                    <button class="boton_limpiar" type="reset">Limpiar</button>
+                </div>
+                
+            </form>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="logo_footer">
+            <img class="corazones" src="imagenes/corazones.svg" alt="fila de corazones">
+            <h3>AluraGeek</h3>
+        </div>
+        <div class="footer_texto_iconos">
+            <p class="footer_texto">Desarrollado por Jonathan Saravia Zurita</p>
+            <div class="footer_iconos">
+                <a href="https://github.com/JonSaraviaZ" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="iconos bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                </svg></a>
+                <a href="https://www.linkedin.com/in/jonathansaraviazurita/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="iconos bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                </svg></a>
+            </div>
+        </div>
+        <p class="footer_texto">© Alura LATAM 2024</p>
+    </footer>
+    <script type ="module" src="/js/controllers/main.js"></script> 
+    <!-- Se ocupa type = module porque estoy importando y  exportando archivos-->
+</body>
+</html>
